@@ -1,0 +1,88 @@
+.faq {
+  display: grid;
+  grid-template-columns: 100px 300px 1fr;
+  gap: 20px;
+}
+
+.faq h1 {
+  grid-column: 1/-1;
+  margin-bottom: 40px;
+}
+
+.faq section {
+  grid-column: 2/-1;
+}
+
+.faq section h2 {
+  font-size: 1rem;
+  font-family: "IBM Plex Mono", Georgia;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: var(--v1);
+  font-weight: bold;
+}
+
+.faq section h2::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--y1);
+  width: 34px;
+  height: 10px;
+  margin-right: 16px;
+}
+
+.faq section p {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+@media (max-width: 800px) {
+  .faq section {
+    grid-column: 1/-1;
+    margin-right: 10px;
+  }
+
+  .faq section h2::before {
+    margin-left: 10px;
+  }
+
+  .faq section p {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 650px) {
+  .faq {
+    gap: 5px;
+  }
+
+  .faq section {
+    margin-right: 5px;
+  }
+
+  .faq section h2::before {
+    width: 20px;
+    margin-right: 6px;
+  }
+
+  .faq section p {
+    margin-left: 38px;
+  }
+}
+
+@media (max-width: 450px) {
+  .faq section p {
+    margin-left: 15px;
+    width: 40ch;
+  }
+
+  .faq h1 {
+    margin-bottom: 20px;
+  }
+
+  .faq section h2 {
+    margin-top: 20px;
+  }
+}

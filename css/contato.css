@@ -1,0 +1,46 @@
+.contato {
+  display: grid;
+  grid-template-columns: 100px 300px 1fr;
+  gap: 20px;
+}
+
+.contato h2 {
+  grid-column: 1/-1;
+}
+
+.contato-mapa {
+  grid-column: 2;
+}
+
+.contato-mapa img {
+  width: 100%;
+}
+
+.contato-lista li {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+.contato-lista li + li {
+  margin-top: 10px;
+}
+
+.contato-lista li::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--y1);
+  width: 25px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+  .contato-mapa {
+    grid-column: 1/-1;
+    max-width: 80%;
+  }
+
+  .contato-lista {
+    grid-column: 1/-1;
+  }
+}
