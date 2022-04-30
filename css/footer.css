@@ -3,15 +3,17 @@
   grid-column: 3/-1;
   margin: 40px 0px;
   background-color: var(--y1);
-  padding: 20px 8px;
+  padding: 20px 0px 20px 5px;
 }
 
 .footer p {
   font-family: "IBM Plex Mono", monospace;
+  width: 35ch;
 }
 
 @media (max-width: 800px) {
   .footer {
     grid-column: 1/-1;
+    margin: 40px 0px 0px 0px;
   }
 }

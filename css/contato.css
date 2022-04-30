@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 100px 300px 1fr;
   gap: 20px;
+  box-sizing: border-box;
 }
 
 .contato h2 {
@@ -35,6 +36,10 @@
 }
 
 @media (max-width: 800px) {
+  .contato {
+    grid-template-columns: 1fr;
+    gap: 20px 0px;
+  }
   .contato-mapa {
     grid-column: 1/-1;
     max-width: 80%;
@@ -42,5 +47,14 @@
 
   .contato-lista {
     grid-column: 1/-1;
+  }
+  .contato-lista ul {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  .contato {
+    grid-template-columns: 1fr;
   }
 }

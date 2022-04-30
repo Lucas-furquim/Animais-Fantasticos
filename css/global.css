@@ -10,7 +10,15 @@ body {
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
   min-height: auto;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
+
+@media (max-width: 440px) {
+  body {
+    display: block;
+  }
+}
+
 img {
   display: block;
 }

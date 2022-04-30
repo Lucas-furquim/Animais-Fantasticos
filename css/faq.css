@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 100px 300px 1fr;
   gap: 20px;
+  box-sizing: border-box;
 }
 
 .faq h1 {
@@ -42,6 +43,7 @@
   .faq section {
     grid-column: 1/-1;
     margin-right: 10px;
+    box-sizing: border-box;
   }
 
   .faq section h2::before {
@@ -55,11 +57,12 @@
 
 @media (max-width: 650px) {
   .faq {
-    gap: 5px;
+    gap: 0px;
   }
 
   .faq section {
-    margin-right: 5px;
+    margin-right: 0px;
+    box-sizing: border-box;
   }
 
   .faq section h2::before {
@@ -72,7 +75,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .faq section p {
     margin-left: 15px;
     width: 40ch;
@@ -84,5 +87,12 @@
 
   .faq section h2 {
     margin-top: 20px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  .faq {
+    grid-template-columns: 1fr;
   }
 }
