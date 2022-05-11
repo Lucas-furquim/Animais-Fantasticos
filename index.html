@@ -12,12 +12,14 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Animais Fantasticos</title>
+
+  <script> document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
   <header class="header" aria-label="Navegação">
     <nav class="nav">
-      <ul>
+      <ul class="js-menu">
         <li><a href="#animais">Animais</a></li>
         <li><a href="#faq">Faq</a></li>
         <li><a href="#contato">Contato</a></li>
@@ -27,10 +29,10 @@
   </header>
 
   <main class="main" aria-label="Conteudo Principal">
-    <section class="principal" id="animais">
+    <section class="principal js-scroll" id="animais">
       <h1 class="titulo-g">Animais Fantásticos</h1>
       <div class="animais-img">
-        <ul>
+        <ul class="js-tabmenu">
           <li><img src="img/imagem1.jpg" alt=""></li>
           <li><img src="img/imagem2.jpg" alt=""></li>
           <li><img src="img/imagem3.jpg" alt=""></li>
@@ -40,7 +42,7 @@
         </ul>
       </div>
 
-      <div class="texto-animais">
+      <div class="texto-animais js-desc">
         <section>
           <h2>Raposa</h2>
           <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
@@ -102,36 +104,26 @@
       </div>
     </section>
 
-    <section class="faq" id="faq">
+    <section class="faq js-scroll" id="faq">
       <h1 class="titulo-g">Faq</h1>
 
-      <section>
-        <h2>Qual a idade dos animais?</h2>
+      <dl class="js-faq-lista">
+        <dt>Qual a idade dos animais?</dt>
+        <dd>A idade em média deles varia muito indo de 9 anos até 15 ou 16 anos de idade</dd>
 
-        <p>A idade em média deles varia muito indo de 9 anos até 15 ou 16 anos de idade</p>
-      </section>
+        <dt>O que eles comem?</dt>
+        <dd>Cada grupo de animais possui sua própria dieta alimentar. Alguns comem frutas, outros comem apenas carne e outros comem qualquer coisa que encontrarem pela natureza</dd>
 
-      <section>
-        <h2>O que eles comem?</h2>
+        <dt>Qual a diferença?</dt>
+        <dd>Os animais silvestres são os animais selvagens, aqueles encontrados na natureza, sem a influência ou sem o hábito do convívio com os seres humanos.</dd>
 
-        <p>Cada grupo de animais possui sua própria dieta alimentar. Alguns comem frutas, outros comem apenas carne e outros comem qualquer coisa que encontrarem pela natureza
-        </p>
-      </section>
+        <dt>Como proteger?</dt>
 
-      <section>
-        <h2>Qual a diferença?</h2>
-
-        <p>Os animais silvestres são os animais selvagens, aqueles encontrados na natureza, sem a influência ou sem o hábito do convívio com os seres humanos.</p>
-      </section>
-
-      <section>
-        <h2>Como proteger?</h2>
-
-        <p>Tente parecer maior: levante as mãos ou o agasalho para cima. Isso fará com que você represente uma ameaça e ele evitará o contato. Fale com o leão com uma voz forte e segura, produza sons e gesticule. Esse comportamento não é comum em uma vítima e irá deixá-lo confuso.</p>
-      </section>
+        <dd>Tente parecer maior: levante as mãos ou o agasalho para cima. Isso fará com que você represente uma ameaça e ele evitará o contato. Fale com o leão com uma voz forte e segura, produza sons e gesticule. Esse comportamento não é comum em uma vítima e irá deixá-lo confuso.</dd>
+      </dl>
     </section>
 
-    <section class="contato" id="contato">
+    <section class="contato js-scroll" id="contato">
       <h2 class="titulo-g">Contato</h2>
       <section class="contato-mapa">
         <img src="img/mapa.png" alt="mapa">
